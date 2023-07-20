@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Cupcakes{% endblock %}
+
+
+
+{% block body%}
+<h1>Cupcakes</h1>
+<ul>
+
+</ul>
+<hr>
+<h2>Create a new cupcake</h2>
+<form>
+    <div>
+        <label for="flavor">flavor</label>
+        <input id="flavor" name="flavor" type="text" />
+    </div>
+    <div>
+        <label for="size">size</label>
+        <input id="size" name="size" type="text" />
+    </div>
+    <div>
+        <label for="rating">rating</label>
+        <input id="rating" name="rating" type="text" />
+    </div>
+
+    <div>
+        <label for="image">image</label>
+        <input id="image" name="image" type="text" />
+    </div>
+    <button>Create</button>
+</form>
+
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="static/app.js?u={{ last_updated }}"></script>
+
+{% endblock %}
